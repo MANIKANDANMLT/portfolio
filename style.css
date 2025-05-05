@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap');
+:root{
+    --black:#020202;
+    --blue:#14213d;
+    --orange:#fca311;
+    --grey:#e5e5e5;
+    --white:#fdfdfd;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--grey);
+    scroll-behavior: smooth;
+}
+.knowme {
+    font-family: Poppins, sans-serif;
+    margin: 20px;
+    margin-bottom: 0;
+    background-color: var(--white);
+    border-radius: 16px;
+    padding: 16px;
+    color: var(--black);
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    align-items: center; 
+    gap: 0px;
+    .myname{
+    font-size: 36px;
+    line-height: 40px;}
+    .me{
+        filter: grayscale();  
+        height: 200;
+        width: 300px;
+        object-fit: cover;
+        clip-path: circle(200px at center 40px);
+        
+      }
+  }
+.knowme > div {
+    flex: 1;
+    min-width: 200px;
+  }
+.knowme:hover{
+    margin: 20px;
+    background-color:var(--white);
+    border-radius: 16px;
+    padding: 16px;
+    font-size: 16px;
+    color: var(--orange);
+    
+    .me{
+    filter:drop-shadow(5px 5px 5px #555);
+    }
+    .myname{
+        color: var(--blue);
+        font-size: 36px;
+        transition: 0.4s;
+        line-height: 40px;
+    }
+    transition: 0.5s;
+}
+.jobs{
+text-align: justify;
+font-size: 12px;
+font-family: monospace;
+font-weight: bolder;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: left;
+    a{text-decoration: none;
+        color:var(--orange);
+        padding: 2px;
+        margin: 2px;
+    }
+    a:hover{
+        color: var(--white);
+        background-color: var(--black);
+        transition: 0.5s;
+        padding: 5px;
+        border: 3px solid var(--orange);
+    }
+}
+.career-card{
+    margin: 20px;
+    background-color: var(--blue);
+    border-radius: 16px;
+    padding: 16px;
+    color: var(--white);
+    font-family: poppins,sans-serif;
+}
+
+.poster{
+    filter: grayscale();
+    height: 200px;
+    border: 3px solid var(--white);
+    margin: 10px 10px;
+}
+.poster:hover{
+    transition: 0.3s;
+    filter: none;
+    border: 5px solid var(--orange);
+}
+.animated-thumb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+}
+.ani-desc{
+ margin: 10px;
+ width: 360px;
+}
+.ani-desc:hover{
+    margin: 10px;
+    width: 360px;
+    color: var(--orange);
+   }
+.mybtn-1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: bolder;
+    text-decoration: none;
+    background-color:transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 5px 10px;
+}
+.mybtn-1:hover{
+    background-color:orange;
+    color: var(--white);
+    border: 1px solid var(--black);
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+.majorcol{
+    display: flex;
+    justify-content: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+    .career-card2{
+        margin: 20px;
+        width: 480px;
+        background-color: var(--orange);
+        border-radius: 16px;
+        padding: 16px;
+        color: var(--white);
+        font-family: poppins,sans-serif;
+    }
+    .mybtn-2{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: x-large;
+        font-weight: bolder;
+        text-decoration: none;
+        background-color:transparent;
+        color: var(--black);
+        border: 1px solid var(--black);
+        padding: 5px 10px;
+    }
+    .mybtn-2:hover{
+        background-color:var(--blue);
+        color: var(--white);
+        border: 1px solid var(--white);
+        padding: 5px 10px;
+        transition: 0.5s;
+    }
+    .career-card3{
+        img{
+            height: 290px;
+        }
+        margin: 20px;
+        width: 720px;
+        background-color: var(--white);
+        border-radius: 16px;
+        padding: 16px;
+        color: var(--blue);
+        font-family: poppins,sans-serif;
+    }
+    .career-card4{
+        img{
+            height: 80px;
+            border-radius: 10px;
+            margin-left: 4px;
+            margin-right: 4px;
+        }
+        margin: 20px;
+        width: 720px;
+        background-color: var(--orange);
+        border-radius: 16px;
+        padding: 16px;
+        color: var(--blue);
+        font-family: poppins,sans-serif;
+    }
+}
+
+
+/* mobile */
+@media only screen and (max-width: 400px) {
+    .poster{
+        filter: grayscale();
+        height: 150px;
+        border: 3px solid var(--white);
+        margin: 10px 60px;
+    }
+    .ani-desc{
+        margin: 0 60px;
+        width: 250px;
+       }
+       .ani-desc:hover{
+        margin: 0 60px;
+        width: 250px;
+        color: var(--orange);
+       }
+    .majorcol{
+        display:inline;
+        .career-card2{
+            margin: 20px;
+            width: 320px;
+            background-color: var(--orange);
+            border-radius: 16px;
+            padding: 16px;
+            color: var(--white);
+            font-family: poppins,sans-serif;
+        }
+  
+        .career-card3{
+            img{
+                height: 220px;
+            }
+            margin: 20px;
+            width: 320px;
+            background-color: var(--white);
+            border-radius: 16px;
+            padding: 16px;
+            color: var(--blue);
+            font-family: poppins,sans-serif;
+        }
+        .career-card4{
+            img{
+                height: 45px;
+            }
+            margin: 20px;
+            width: 320px;
+            background-color: var(--orange);
+            border-radius: 16px;
+            padding: 16px;
+            color: var(--blue);
+            font-family: poppins,sans-serif;
+        }
+       }
+  }
+svg{
+    height: 80px;
+    padding: 5px;
+    margin-top: 6px;
+    background-color: var(--white);
+    border: 3px solid var(--orange);
+    border-radius: 16px;
+    margin-left: 10px ;
+    box-shadow: 2px 2px 2px var(--blue);
+}
+.poster2{
+    margin-top: 20px;
+    height: 100px;
+    border: 2px solid white;
+}
+.btnforlink{
+    height: 36px;
+    border: 0px;
+    border-radius: 0;
+    box-shadow: 0 0 ;
+    margin-top: -10px;
+    transform: translate(-5px, 12px);
+}
